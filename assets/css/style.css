@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
 
 * {
     padding: 0;
@@ -30,7 +30,6 @@ body {
     padding: 20px 100px;
     z-index: 1000;
     background-color: rgba(226, 209, 209, 0.8);
-
 }
 
 .nav .logo {
@@ -69,7 +68,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 
 .copy {
     width: 40vw;
@@ -124,7 +122,7 @@ button {
 
 button::after {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     top: 100%;
     left: 0;
@@ -199,7 +197,7 @@ button:hover::after {
 }
 
 .overlay-item-wrapper::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 60px;
     left: 0;
@@ -228,7 +226,7 @@ button:hover::after {
     background: none;
     outline: none;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     padding: 0.8em;
     color: #fff;
     margin: 1em 0;
@@ -263,14 +261,20 @@ button:hover::after {
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    background: red;
+    background: #ff0000;
     z-index: 999;
     pointer-events: none;
 }
 
+#cursor .fi {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
 
-
-
+#cursor.scale-flag .fi {
+    transform: scale(1.5);
+}
 
 .checkmark-wrapper {
     display: block;
@@ -303,5 +307,3 @@ button:hover::after {
     border: 0.1rem solid #fff;
     background-color: #000;
 }
-
-
